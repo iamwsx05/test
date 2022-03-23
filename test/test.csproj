@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C4875A43-A954-4DE6-8689-37F50546CF9C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>test</RootNamespace>
+    <AssemblyName>test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="comm.control, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\debug\comm.control.dll</HintPath>
+    </Reference>
+    <Reference Include="comm.utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\debug\comm.utils.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v16.2" />
+    <Reference Include="DevExpress.Data.v16.2" />
+    <Reference Include="DevExpress.Utils.v16.2" />
+    <Reference Include="DevExpress.Sparkline.v16.2.Core" />
+    <Reference Include="DevExpress.XtraBars.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.2" />
+    <Reference Include="DevExpress.Printing.v16.2.Core" />
+    <Reference Include="DevExpress.XtraGrid.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\code\iis.Api\debug\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\debug\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.3.5.40, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=3.8.57.7040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.XLS, Version=7.11.13.7040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Spire.XLS.dll</HintPath>
+    </Reference>
+    <Reference Include="Sybase.Data.AseClient, Version=1.1.327.0, Culture=neutral, PublicKeyToken=26e0f1529304f4a7">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\debug\Sybase.Data.AseClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="wecare.iis">
+      <HintPath>..\..\..\debug\wecare.iis.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="controller\ctlFrame.cs" />
+    <Compile Include="controller\WNavbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controller\WNavbarGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="controller\WNavbarGroupItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="entity\entityCcyy.cs" />
+    <Compile Include="entity\entityXTYY.cs" />
+    <Compile Include="entity\entityNhpk.cs" />
+    <Compile Include="entity\entityDlyy.cs" />
+    <Compile Include="entity\entityXinyi.cs" />
+    <Compile Include="entity\entityZkfy.cs" />
+    <Compile Include="entity\entity.cs" />
+    <Compile Include="function\ExcelHelper.cs" />
+    <Compile Include="proxy\proxyXtLis.cs" />
+    <Compile Include="ui\frmCCYY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\frmCCYY.Designer.cs">
+      <DependentUpon>frmCCYY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\frmXTYY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\frmXTYY.Designer.cs">
+      <DependentUpon>frmXTYY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\frmDLYY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\frmDLYY.Designer.cs">
+      <DependentUpon>frmDLYY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\frmZKFY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\frmZKFY.Designer.cs">
+      <DependentUpon>frmZKFY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\frmNhpk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\frmNhpk.Designer.cs">
+      <DependentUpon>frmNhpk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\frmXiyi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\frmXiyi.Designer.cs">
+      <DependentUpon>frmXiyi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\frmZqdh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\frmZqdh.Designer.cs">
+      <DependentUpon>frmZqdh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\frmEastRiver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\frmEastRiver.Designer.cs">
+      <DependentUpon>frmEastRiver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\frmMealsDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\frmMealsDay.Designer.cs">
+      <DependentUpon>frmMealsDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\frmMeals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\frmMeals.Designer.cs">
+      <DependentUpon>frmMeals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="function\function.cs" />
+    <Compile Include="function\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="function\pywbCommon.cs" />
+    <Compile Include="ui\ribbonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\ribbonForm.Designer.cs">
+      <DependentUpon>ribbonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="function\XmlOperation.cs" />
+    <EmbeddedResource Include="ui\frmCCYY.resx">
+      <DependentUpon>frmCCYY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\frmXTYY.resx">
+      <DependentUpon>frmXTYY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\frmDLYY.resx">
+      <DependentUpon>frmDLYY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\frmZKFY.resx">
+      <DependentUpon>frmZKFY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\frmNhpk.resx">
+      <DependentUpon>frmNhpk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\frmXiyi.resx">
+      <DependentUpon>frmXiyi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\frmZqdh.resx">
+      <DependentUpon>frmZqdh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\ribbonForm.resx">
+      <DependentUpon>ribbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="ui\frmEastRiver.resx">
+      <DependentUpon>frmEastRiver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\frmMealsDay.resx">
+      <DependentUpon>frmMealsDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\frmMeals.resx">
+      <DependentUpon>frmMeals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="function\packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\control\control.csproj">
+      <Project>{9249DFDE-3FAF-4966-9B34-C1BF2B09F7F0}</Project>
+      <Name>control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\wecare.core\wecare.core.csproj">
+      <Project>{29eb1dd7-a9cd-4549-a6ac-1ae99cae93fc}</Project>
+      <Name>wecare.core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
