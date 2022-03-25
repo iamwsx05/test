@@ -1001,4 +1001,27 @@ namespace XTYY
         public string rec_result { get; set; }
         public string res_tag { get; set; }
     }
+
+
+    public class EntityDw
+    {
+        public string lnc_code { get; set; }
+        public string lnc_name { get; set; }
+    }
+
+    public class EntityItemRpt
+    {
+        public int xh { get; set; }
+        public int tjrc { get; set; }
+        public string itemCode { get; set; }
+        public string itemName { get; set; }
+        public string zk { get; set; }
+        public decimal zqdj { get; set; }
+        public decimal zqje { get; set; }
+        public decimal zhdj { get; set; }
+        public decimal zhje { get; set; }
+        public string kdks { get; set; }
+        public string zxks { get; set; }
+        public string bz { get; set; }
+    }
 }

@@ -167,8 +167,17 @@ namespace test
                 Text = "功能"
             };
 
+            WNavbarGroupItem itemXtyyReport = new WNavbarGroupItem
+            {
+                BackColor = bgc,
+                ForeColor = frc,
+                SelectedBackColor = gexc,
+                SelectedForeColor = gcfc,
+                MouseHoverStyle = WNavbarGroupItem.MouseOverStyle.BackColor,
+                Text = "报表"
+            };
 
-            navGpXtyy.Items.AddRange(new WNavbarGroupItem[] { itemXtyyFun });
+            navGpXtyy.Items.AddRange(new WNavbarGroupItem[] { itemXtyyFun, itemXtyyReport });
             #endregion
 
             #region 陈村医院
@@ -234,8 +243,6 @@ namespace test
             navGpZyb.Items.AddRange(new WNavbarGroupItem[] { itemZybFun, itemZybReport });
             #endregion
 
-
-
             navGpZkfy.Visible = true;
             navGpXy.Visible = true;
             navGpDlyy.Visible = true;
@@ -245,8 +252,6 @@ namespace test
 
             this.wNavbar1.Items.AddRange(new WNavbarGroup[] { navGpZkfy, navGpXy, navGpDlyy, navGpXtyy, navGpCcyy, navGpZyb });
         }
-
-
 
         #region 反射入口
         /// <summary>
@@ -294,7 +299,10 @@ namespace test
 
             if (gItem.Parent.Text == "杏坛医院")
             {
-                ReflectionByAccVo2(gItem, "frmXTYY");
+                if(gItem.Text == "报表")
+                    ReflectionByAccVo2(gItem, "frmXtyyRpt");
+                else
+                    ReflectionByAccVo2(gItem, "frmXTYY");
             }
 
             if (gItem.Parent.Text == "职检数据上传")

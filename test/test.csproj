@@ -120,6 +120,12 @@
     <Compile Include="ui\frmCCYY.Designer.cs">
       <DependentUpon>frmCCYY.cs</DependentUpon>
     </Compile>
+    <Compile Include="ui\frmXtyyRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\frmXtyyRpt.Designer.cs">
+      <DependentUpon>frmXtyyRpt.cs</DependentUpon>
+    </Compile>
     <Compile Include="ui\frmXTYY.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     <Compile Include="function\XmlOperation.cs" />
     <EmbeddedResource Include="ui\frmCCYY.resx">
       <DependentUpon>frmCCYY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\frmXtyyRpt.resx">
+      <DependentUpon>frmXtyyRpt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ui\frmXTYY.resx">
       <DependentUpon>frmXTYY.cs</DependentUpon>
